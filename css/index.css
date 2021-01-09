@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body,h1,h2,h3,h4,h5,h6 {
   font-family: "Lato", sans-serif;
 }
 
@@ -15,12 +9,16 @@ html {
   height: 100%;
   color: #000;
   line-height: 1.8;
+  scroll-behavior: smooth;
 }
 p{
   color : #777;
 }
 strong{
   color: #000;
+}
+a{
+  text-decoration: none;
 }
 /* Create a Parallax Effect */
 .bgimg-1,
@@ -53,7 +51,9 @@ strong{
 .w3-wide {
   letter-spacing: 10px;
 }
-
+.education-line{
+  margin-top: 47px;
+}
 .w3-hover-opacity {
   cursor: pointer;
 }
@@ -67,4 +67,20 @@ strong{
     background-attachment: scroll;
     min-height: 400px;
   }
+}
+.img-border{
+  position: relative;
+}
+.img-border:after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.about-me{
+  font-size: 17px;
+  margin-top: 25px;
 }
