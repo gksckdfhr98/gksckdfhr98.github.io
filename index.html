@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>Rok'S BLOG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/index.css">
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">ROK's</span> BLOG</span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em><strong>게을러 지기 위해 오늘도 부지런한 개발자가 되자.</strong></em></p>
+    <p>
+      안녕하세요. 저는 Back-end 개발자를 꿈꾸고 있는 한창록입니다.<br>
+      저는 소프트웨어 개발을 통해 문제를 해결하고 오류를 찾아 개선할 때 <strong>뿌듯함</strong>과 <strong>자부심</strong>을 느낍니다.<br />
+      보다 많은 오류와 코드에 부딪히고자 ICT 학점연계 인턴십을 통해 Back-end 경험을 쌓을 수 있었습니다.<br />
+      저는 인턴십에서 데이터베이스와의 비즈니스 로직을 통해 CRUD 시스템을 개발해봤고, 더 나은 개발자로 성장하기 위해
+      기초지식부터 다지면서 제가 관심 있어하는 웹페이지를 만들 수 있고 동시에 CRUD 시스템을 구현할 수 있는 수준을 목표 하고 있습니다.<br />
+    </p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><strong><i class="fa fa-user w3-margin-right"></i>한창록</strong></p><br>
+        <img src="/img/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University</b></h5>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014.03 ~</h6>
+          <p>숭실대학교 전자정보공학부 it융합전공 · (졸업유예)</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Intern(TechHeim)</b></h5>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020.03 - 2020.06</h6>
+          <p>클라우드 기반의 서비스 병원 PACS 자동점검 관리 시스템 개발</p>
+          <hr>
+        </div>
+      </div>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16"><strong>SKILLS</strong>: JAVA, Javascript, Spring, Node.js, MySQL, Git, AWS</p>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Java & C++</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Spring Framework</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>HTML & CSS & JavaScript</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Mysql</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center">PROJECT</h3>
+    <p class="w3-center"><em>제가 한 프로젝트 목록입니다.<br> (이미지 클릭시 확대됩니다.)</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="https://user-images.githubusercontent.com/56072258/104018767-bb8ba900-51fd-11eb-922a-fbd13547a070.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AWS 기반의 전시 정보 예약 관리 플랫폼">
+        <p>AWS 기반의 전시 정보 예약 관리 플랫폼</p>
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://user-images.githubusercontent.com/56072258/104020975-59cd3e00-5201-11eb-9bac-6a6deaf54ab7.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Google Chrome의 Momentum 만들기">
+        <p>Google Chrome의 Momentum 만들기</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE I AM</h3>
+    <p class="w3-center"><em>피드백 주시면 감사하겠습니다!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="/img/map.jpg" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Yong-In, Korea<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone : 010-3004-0574<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email : gksckdfhr99@gmail.com<br>
+        </div>
+        <p>Thank you!</p>
+        <div class="w3-xlarge w3-section">
+          <a href="https://www.facebook.com/profile.php?id=100029467920159" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+          <a href="https://github.com/Altudy/chang-rok" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </footer>
+</body>
+<script type="text/javascript" src="./js/index.js"></script>
+</html>
